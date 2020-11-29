@@ -8,6 +8,50 @@ header {
     height: 100vh;
     width: 100%;
     background: lightseagreen;
+    font-size: 20rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+nav {
+    height: 20vh;
+    width: 100%;
+    background: red;
+    margin-top: 100vh;
+    top: 0;
+    position:-webkit-sticky;
+    position: sticky;
+}
+
+.s1 {
+    height: 80vh;
+    width: 100%;
+    background: gray;
+}
+
+.s2 {
+    height: 70vh;
+    width: 100%;
+    background: lightskyblue;
+} 
+
+footer {
+    height: 10vh;
+    width: 100%;
+    background: limegreen;
+    position:-webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* header {
+    height: 100vh;
+    width: 100%;
+    background: lightseagreen;
     position: fixed;
     top: 0;
     left: 0;
@@ -19,6 +63,7 @@ nav {
     background: red;
     margin-top: 100vh;
     top: 0;
+    position:-webkit-sticky;
     position: sticky;
     z-index: 1;
 }
@@ -37,7 +82,7 @@ nav {
     background: lightskyblue;
     position: absolute;
     top: 200vh;
-}
+} 
 
 footer {
     height: 15vh;
@@ -45,4 +90,4 @@ footer {
     background: limegreen;
     position: absolute;
     top: 280vh;
-}
+} */
