@@ -1,3 +1,18 @@
+:root {
+    --light1: #ffffff;
+    --light2: #f5f5f5;
+    --gray: #999999;
+    --dark1: #000000;
+    --dark2: #444444;
+
+    --contactInput: rgba(230, 230, 230, 0.6);
+    --contactInputHover: rgba(0, 0, 0, 0.1);
+    --contactFocus: rgba(30,85,250,0.47);
+
+    --submitBtn: #2ecc71;
+    --submitBtnHover: #27ae60;
+  }
+
 * {
     padding: 0;
     margin: 0;
@@ -9,7 +24,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     font-size: 1rem;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', Arial, sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -51,8 +66,8 @@ header {
 
 .btn-scroll {
     text-decoration: none;
-    color: #000;
-    border: 1px solid #000;
+    color: var(--dark1);
+    border: 1px solid var(--dark1);
     border-radius: 5px;
     padding: 30px;
     display: block;
@@ -69,14 +84,14 @@ header {
 nav {
     height: 10vh;
     width: 100%;
-    background-color: #444;
-    font-size: 3rem;
-    color: #fff;
+    background-color: var(--dark2);
+    font-size: 8vh;
+    color: var(--light1);
 
     top: 0;
     position:-webkit-sticky;
     position: sticky;
-    z-index: 1;
+    z-index: 2;
 
     display: flex;
     justify-content: space-evenly;
@@ -85,7 +100,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: var(--light1);
 }
 
 nav i {
@@ -93,7 +108,7 @@ nav i {
 }
 
 nav i:hover {
-    color: #bbb;
+    color: var(--gray);
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -103,7 +118,7 @@ nav i:hover {
 .s1 {
     height: fit-content;
     width: 100%;
-    background: #fff;
+    background: var(--light1);
     font-size: 2vw;
 
     display: grid;
@@ -111,7 +126,7 @@ nav i:hover {
 }
 
 .s1 .text {
-    border: 20px solid whitesmoke;
+    border: 20px solid var(--light2);
     padding: 30px;
     text-align: justify;
     height: fit-content;
@@ -127,7 +142,7 @@ nav i:hover {
     background-repeat:no-repeat;
     background-size:contain;
     background-position: right top;
-    border: 20px solid whitesmoke;
+    border: 20px solid var(--light2);
     min-height: 50vh;
 }
 
@@ -136,14 +151,14 @@ nav i:hover {
 .s2 {
     min-height: 100vh;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: var(--light2);
 }
 
 .s2 h2 {
     text-align: center;
     padding: 10px;
-    background-color: #444;
-    color: #fff;
+    background-color: var(--dark2);
+    color: var(--light2);
 }
 
 .s2 .s2-container {
@@ -153,14 +168,14 @@ nav i:hover {
 }
 
 .s2 .s2-container .grid {
-    background-color: #fff;
+    background-color: var(--light1);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     height: 40vh; 
     opacity: .3;
     transition: .3s;
-    border: 5px solid #fff;
+    border: 5px solid var(--light1);
 }
 
 .s2 .s2-container .grid1 {
@@ -205,7 +220,7 @@ nav i:hover {
     height: 90vh;
     width: 100%;
     position: relative;
-    background: whitesmoke;
+    background: var(--light2);
     text-align: center;
 }
 
@@ -213,7 +228,7 @@ nav i:hover {
     width: 50%;
     height: 70%;
     position: relative;
-    margin: 10px auto;
+    margin: 10px auto 50px auto;
     /* padding: 3em; */
     border-radius: 20px;
     /* border: 1px dotted red; */
@@ -221,8 +236,8 @@ nav i:hover {
 }
 
 .s3 h2 {
-    background-color: #444;
-    color: #fff;
+    background-color: var(--dark2);
+    color: var(--light1);
     padding: 10px;
 }
 
@@ -272,7 +287,7 @@ nav i:hover {
 
 .s3 .slide-label {
     border: 1px solid rgba(0, 0, 0, 0.281);
-    background: rgb(255, 255, 255);
+    background: var(--light1);
     box-shadow: 0px 2px 2px rgba(56, 56, 56, 0.822);
     position: absolute;
     bottom: 12%;
@@ -280,6 +295,7 @@ nav i:hover {
     height: 30px;
     cursor: pointer;
     transform: scale(1.1);
+    z-index: 1;
 }
 
 .slide-label:nth-of-type(1) {
@@ -305,8 +321,8 @@ nav i:hover {
 .slide-label::after {
     content: '';
     display: block;
-    border: 1px solid black;
-    background: black;
+    border: 1px solid var(--dark1);
+    background: var(--dark1);
     width: 20px;
     height: 20px;
     margin: 3px;
@@ -333,13 +349,13 @@ input:checked+label.slide-label {
 
 input:checked+label.slide-label::after {
     transform: scale(1.1, 1.1);
-    background: black;
+    background: var(--dark1);
 }
 
 /* ------------ <section s4> --------------- */
 
 .s4 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-image: url(img3/letter.jpg);
     background-size: cover;
@@ -355,6 +371,7 @@ input:checked+label.slide-label::after {
 }
 
 .contact {
+    min-height: fit-content;
     height: 80%;
 	width: 80%;
     display: grid;
@@ -363,7 +380,7 @@ input:checked+label.slide-label::after {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: #fff;
+	background-color: var(--light1);
 	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.2);
 }
 
@@ -415,7 +432,7 @@ input:checked+label.slide-label::after {
 	width: 100%;
 	border: 2px solid rgba(0, 0, 0, 0);
 	outline: none;
-	background-color: rgba(230, 230, 230, 0.6);
+	background-color: var(--contactInput);
 	padding: 0.5rem 1rem;
 	font-size: 1.5rem;
 	margin-bottom: 22px;
@@ -423,26 +440,26 @@ input:checked+label.slide-label::after {
 }
 
 .field:hover{
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: var(--contactInputHover);
 }
 
 .field:focus{
-    border: 2px solid rgba(30,85,250,0.47);
-    background-color: #fff;
+    border: 2px solid var(--contactFocus);
+    background-color: var(--light1);
 }
 
 .field:focus + label {
     visibility: visible;
-    background-color: rgba(30,85,250,0.47);
+    background-color: var(--contactFocus);
     font-size: 1rem;
-    color: white;
+    color: var(--light1);
 }
 
 .submit-btn{
 	width: 100%;
 	padding: 0.5rem 1rem;
-	background-color: #2ecc71;
-	color: #fff;
+	background-color: var(--submitBtn);
+	color: var(--light1);
 	font-size: 1.5rem;
 	border: none;
 	outline: none;
@@ -451,14 +468,14 @@ input:checked+label.slide-label::after {
 }
 
 .btn:hover{
-    background-color: #27ae60;
+    background-color: var(--submitBtnHover);
 }
 
 footer {
     height: 10vh;
     width: 100%;
     line-height: 10vh;
-    background: #fff;
+    background: var(--light1);
     text-align: center;
     position: relative;
 }
@@ -516,14 +533,14 @@ footer {
 
 @keyframes myAnim {
     0% {
-        fill: #fff;
+        fill: var(--light1);
     }
 
     50% {
-        fill: #aaa;
+        fill: var(--gray);
     }
 
     100% {
-        fill: #fff;
+        fill: var(--light1);
     }
 }
