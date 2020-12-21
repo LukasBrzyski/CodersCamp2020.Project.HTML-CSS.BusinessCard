@@ -28,7 +28,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ------------ <SVG> --------------- */
+/* --------------- <SVG> ------------------ */
 
 svg {
     height: 100vh;
@@ -40,7 +40,6 @@ svg {
 .hexagon {
     animation-name: myAnim;
     animation-iteration-count: infinite;
-    transition: fill .3s ease;
 }
 
 .hex1 { animation-duration: 5s; }
@@ -48,7 +47,7 @@ svg {
 .hex3 { animation-duration: 15s; }
 .hex4 { animation-duration: 20s; }
 
-/* ------------ <header> --------------- */
+/* --------------- <header> ------------------ */
 
 header {
     height: 100vh;
@@ -79,7 +78,7 @@ header {
     box-shadow: 0px 2px 2px rgba(56, 56, 56, 0.822);
 }
 
-/* ------------ <nav> --------------- */
+/* --------------- <nav> ------------------ */
 
 nav {
     height: 10vh;
@@ -103,9 +102,7 @@ nav a {
     color: var(--light1);
 }
 
-nav i {
-    transition: .3s;
-}
+nav i { transition: .3s; }
 
 nav i:hover {
     color: var(--gray);
@@ -113,7 +110,7 @@ nav i:hover {
     transform: scale(1.1);
 }
 
-/* ------------ <section s1> --------------- */
+/* --------------- <section s1> ------------------ */
 
 .s1 {
     height: fit-content;
@@ -132,9 +129,7 @@ nav i:hover {
     height: fit-content;
 }
 
-.s1 .text p {
-    margin: 10px auto;
-}
+.s1 .text p { margin: 10px auto; }
 
 .s1 .pic {
     background-image: url(img3/road2.png);
@@ -146,7 +141,7 @@ nav i:hover {
     min-height: 50vh;
 }
 
-/* ------------ <section s2> --------------- */
+/* --------------- <section s2> ------------------ */
 
 .s2 {
     min-height: 100vh;
@@ -178,43 +173,18 @@ nav i:hover {
     border: 5px solid var(--light1);
 }
 
-.s2 .s2-container .grid1 {
-    background-image: url(img3/HTML5.png);
-}
+.s2 .s2-container .grid1 { background-image: url(img3/HTML5.png); }
+.s2 .s2-container .grid2 { background-image: url(img3/CSS3.png); }
+.s2 .s2-container .grid3 { background-image: url(img3/JS.png); }
+.s2 .s2-container .grid4 { background-image: url(img3/Typescript.png); }
+.s2 .s2-container .grid5 { background-image: url(img3/Phaser.png); }
+.s2 .s2-container .grid6 { background-image: url(img3/React.png); }
+.s2 .s2-container .grid7 { background-image: url(img3/Git.png); }
+.s2 .s2-container .grid8 { background-image: url(img3/Node.png); }
 
-.s2 .s2-container .grid2 {
-    background-image: url(img3/CSS3.png);
-}
+.s2 .s2-container .grid:hover { opacity: .7; }
 
-.s2 .s2-container .grid3 {
-    background-image: url(img3/JS.png);
-}
-
-.s2 .s2-container .grid4 {
-    background-image: url(img3/Typescript.png);
-}
-
-.s2 .s2-container .grid5 {
-    background-image: url(img3/Phaser.png);
-}
-
-.s2 .s2-container .grid6 {
-    background-image: url(img3/React.png);
-}
-
-.s2 .s2-container .grid7 {
-    background-image: url(img3/Git.png);
-}
-
-.s2 .s2-container .grid8 {
-    background-image: url(img3/Node.png);
-}
-
-.s2 .s2-container .grid:hover {
-    opacity: .7;
-}
-
-/* ------------ <section s3> --------------- */
+/* --------------- <section s3> ------------------ */
 
 .s3 {
     height: 90vh;
@@ -229,9 +199,7 @@ nav i:hover {
     height: 70%;
     position: relative;
     margin: 10px auto 50px auto;
-    /* padding: 3em; */
     border-radius: 20px;
-    /* border: 1px dotted red; */
     overflow: hidden;
 }
 
@@ -260,25 +228,12 @@ nav i:hover {
     background-repeat: no-repeat;
 }
 
-.slide1 {
-    background-image: url(img3/snake.png);
-}
+.slide1 { background-image: url(img3/snake.png); }
+.slide2 { background-image: url(img3/mario.png); }
+.slide3 { background-image: url(img3/memory.png); }
+.slide4 { background-image: url(img3/phaser-tut.png); }
 
-.slide2 {
-    background-image: url(img3/mario.png);
-}
-
-.slide3 {
-    background-image: url(img3/memory.png);
-}
-
-.slide4 {
-    background-image: url(img3/phaser-tut.png);
-}
-
-.s3 input {
-    display: none;
-}
+.s3 input { display: none; }
 
 .s3 .slide-label, .slide-label::after {
     border-radius: 50%;
@@ -298,25 +253,12 @@ nav i:hover {
     z-index: 1;
 }
 
-.slide-label:nth-of-type(1) {
-    left: 34%;
-}
+.slide-label:nth-of-type(1) { left: 34%; }
+.slide-label:nth-of-type(2) { left: 43%; }
+.slide-label:nth-of-type(3) { left: 52%; }
+.slide-label:nth-of-type(4) { left: 61%; }
 
-.slide-label:nth-of-type(2) {
-    left: 43%;
-}
-
-.slide-label:nth-of-type(3) {
-    left: 52%;
-}
-
-.slide-label:nth-of-type(4) {
-    left: 61%;
-}
-
-.slide-label:hover {
-    transform: scale(1.5);
-}
+.slide-label:hover { transform: scale(1.5); }
 
 .slide-label::after {
     content: '';
@@ -330,17 +272,9 @@ nav i:hover {
     box-shadow: 0px 1px 5px rgba(56, 56, 56, 0.822);
 }
 
-input:checked#slide2-radio~div.slide-container>div.slides {
-    left: -100%;
-}
-
-input:checked#slide3-radio~div.slide-container>div.slides {
-    left: -200%;
-}
-
-input:checked#slide4-radio~div.slide-container>div.slides {
-    left: -300%;
-}
+input:checked#slide2-radio~div.slide-container>div.slides { left: -100%; }
+input:checked#slide3-radio~div.slide-container>div.slides { left: -200%; }
+input:checked#slide4-radio~div.slide-container>div.slides { left: -300%; }
 
 input:checked+label.slide-label {
     transform: scale(1.2);
@@ -352,7 +286,7 @@ input:checked+label.slide-label::after {
     background: var(--dark1);
 }
 
-/* ------------ <section s4> --------------- */
+/* --------------- <section s4> ------------------ */
 
 .s4 {
     min-height: 100vh;
@@ -394,18 +328,11 @@ input:checked+label.slide-label::after {
     font-size: 2vw;
 }
 
-.s4 .side ul {
-    list-style-type: none;
-}
+.s4 .side ul { list-style-type: none; }
 
-.s4 .side i {
-    font-size: 20vw;
-}
+.s4 .side i { font-size: 20vw; }
 
-.main {
-	/* padding: 25px 40px; */
-    padding: .4em .6em;
-}
+.main { padding: .4em .6em; }
 
 .s4 h2{
     position: relative;
@@ -428,7 +355,7 @@ input:checked+label.slide-label::after {
     visibility: hidden;
 }
 
-.field{
+.field {
 	width: 100%;
 	border: 2px solid rgba(0, 0, 0, 0);
 	outline: none;
@@ -439,11 +366,9 @@ input:checked+label.slide-label::after {
 	transition: .3s;
 }
 
-.field:hover{
-	background-color: var(--contactInputHover);
-}
+.field:hover { background-color: var(--contactInputHover); }
 
-.field:focus{
+.field:focus {
     border: 2px solid var(--contactFocus);
     background-color: var(--light1);
 }
@@ -455,7 +380,7 @@ input:checked+label.slide-label::after {
     color: var(--light1);
 }
 
-.submit-btn{
+.submit-btn {
 	width: 100%;
 	padding: 0.5rem 1rem;
 	background-color: var(--submitBtn);
@@ -467,9 +392,9 @@ input:checked+label.slide-label::after {
 	transition: .3s;
 }
 
-.btn:hover{
-    background-color: var(--submitBtnHover);
-}
+.btn:hover{ background-color: var(--submitBtnHover); }
+
+/* ------------------- <footer> -------------------------*/
 
 footer {
     height: 10vh;
@@ -480,13 +405,11 @@ footer {
     position: relative;
 }
 
+/*------------------- @media queries -------------------*/
+
 @media (max-width: 1599px) {
-    .s2 .s2-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .s2 .s2-container .grid8 {
-        grid-column: span 2;
-    }
+    .s2 .s2-container { grid-template-columns: repeat(3, 1fr); }
+    .s2 .s2-container .grid8 { grid-column: span 2; }
 }
 
 @media (max-width: 768px) {
@@ -495,52 +418,26 @@ footer {
         grid-template-rows: auto auto;
         font-size: 4vw;
     }
-    .s1 .pic {
-        background-size: cover;
-    }
-    .s2 .s2-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .s2 .s2-container .grid {
-        opacity: .7;
-    }
-    .s2 .s2-container .grid8 {
-        grid-column: span 1;
-    }
+    .s1 .pic { background-size: cover; }
+    .s2 .s2-container { grid-template-columns: repeat(2, 1fr); }
+    .s2 .s2-container .grid { opacity: .7; }
+    .s2 .s2-container .grid8 { grid-column: span 1; }
     .s3 .slide-container {
         width: 90%;
         height: 70%;
     }
-    .s4 .contact {
-        width: 90%;
-    }
-    .s4 .contact .field{
-        font-size: 1rem;
-    }
-    .s4 .contact .side {
-        font-size: 4vw;
-    }
-    .s4 .contact .side i {
-        font-size: 30vw;
-    }
-    .s4 h2 {
-        font-size: 8vw;
-    }
-    .s4 form div {
-        width: 90%;
-    }
+    .s4 .contact { width: 90%; }
+    .s4 .contact .field{ font-size: 1rem; }
+    .s4 .contact .side { font-size: 4vw; }
+    .s4 .contact .side i { font-size: 30vw; }
+    .s4 h2 { font-size: 8vw; }
+    .s4 form div { width: 90%; }
 }
 
+/*--------------------- @keyframes --------------*/
+
 @keyframes myAnim {
-    0% {
-        fill: var(--light1);
-    }
-
-    50% {
-        fill: var(--gray);
-    }
-
-    100% {
-        fill: var(--light1);
-    }
+    0% { fill: var(--light1); }
+    50% { fill: var(--gray); }
+    100% { fill: var(--light1); }
 }
